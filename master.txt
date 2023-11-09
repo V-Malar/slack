@@ -1,0 +1,128 @@
+Thiruvadi ganesan
+  11:10 AM
+https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaServlets.html#zz-11.1
+
+
+Thiruvadi ganesan
+  6:10 PM
+Zip
+ 
+
+vastpro.zip
+Zip
+
+
+
+React
+
+package basicProgramss;
+public class Mainclass1 {
+	public Mainclass1(int a) {
+		
+		System.out.println();
+		System.out.println("No argument constructor is called " + a);
+	}
+	public Mainclass1(Secondary s) {
+		//System.out.println(a + " " + b);
+		System.out.println("input argument constructor is called");
+	}
+public Mainclass1(Mainclass1 mainclass1) {
+		// TODO Auto-generated constructor stub
+	}
+public static void main(String[] args) {
+	//Mainclass1 obj=new Mainclass1();
+	Secondary obj=new Secondary(20,60);
+}
+}
+ class Secondary extends Mainclass1 {
+	public Secondary(int i, int j) {
+		// TODO Auto-generated constructor stub
+		super(new Mainclass1(10));
+	}
+	
+ }
+
+
+Thiruvadi ganesan
+  4:27 PM
+package basicProgramss;
+public class Casting {
+public static void main(String[] args) {
+	One one=new Two(); //upcasting
+	System.out.println(one.a);
+	Two two=(Two) one;	//downcasting
+	System.out.println(two.a+" "+two.b);
+}
+}
+class One{
+	int a=10;
+}
+class Two extends One{
+	int b=11;
+}
+
+
+Thiruvadi ganesan
+  11:10 AM
+https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaServlets.html#zz-11.1
+
+
+Thiruvadi ganesan
+  6:10 PM
+Zip
+ 
+
+vastpro.zip
+Zip
+
+
+
+React
+
+Reply
+
+
+
+
+
+
+
+
+
+
+
+
+Message Thiruvadi ganesan
+
+
+
+
+
+
+Reply
+
+
+
+
+
+
+
+
+
+
+
+
+Message Thiruvadi ganesan
+
+
+
+
+
+
+
+
+
+Shift + Enter to add a new line
+Slack needs your permission to enable desktop notifications.
+
+Oct 4th at 6:10:40 PM
