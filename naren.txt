@@ -1,0 +1,479 @@
+select e.ename, d.dname from emp as e, dept as d where e.deptno=d.deptno;
+
+package Kamal;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.TreeSet;
+public class Ex1 {
+  public static void main(String[] args) {
+	  Student s1 = new Student(100);
+	  Student s2 = new Student(100);
+	  TreeSet<Integer> list = new TreeSet<Integer>((I1,I2)->I2.compareTo(I1));
+	  list.add(100);
+	  list.add(99);
+	  list.add(1);
+	
+	  System.out.println(s2.compareTo(s1));
+	  System.out.println(list);
+	
+	 
+	 
+	
+}
+}
+class Student implements Comparable<Student>{
+	
+	public Student(Integer marks) {
+		this.marks=marks;
+	}
+	
+	Integer marks;
+	@Override
+	public int compareTo(Student o) {
+		System.out.println("Compareto called");
+		return this.marks.compareTo(o.marks);//-negative +postive 0
+	}
+	@Override
+	public String toString() {
+		return "Student [marks=" + marks + "]";
+	}
+	
+	
+}
+
+
+Mr.Narendhiran k
+  7:35 PM
+package Kamal;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.TreeSet;
+public class Ex1 {
+  public static void main(String[] args) {
+	  Student s1 = new Student(100);
+	  Student s2 = new Student(80);
+	  TreeSet<Student> list = new TreeSet<Student>((o1,o2)->o1.marks.compareTo(o2.marks));
+	  list.add(s1);
+	  list.add(s2);
+	
+	
+	  System.out.println(list);
+	
+	 
+	 
+	
+}
+}
+class Student {
+	
+	public Student(Integer marks) {
+		this.marks=marks;
+	}
+	
+	Integer marks;
+	
+	@Override
+	public String toString() {
+		return "Student [marks=" + marks + "]";
+	}
+	
+	
+}
+7:38
+package Kamal;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.TreeSet;
+public class Ex1 {
+  public static void main(String[] args) {
+	  Student s1 = new Student(100);
+	  Student s2 = new Student(100);
+	  TreeSet<Integer> list = new TreeSet<Integer>((I1,I2)->I2.compareTo(I1));
+	  list.add(100);
+	  list.add(99);
+	  list.add(1);
+	
+	  System.out.println(s2.compareTo(s1));
+	  System.out.println(list);
+	
+	 
+	 
+	
+}
+}
+class Student implements Comparable<Student>{
+	
+	public Student(Integer marks) {
+		this.marks=marks;
+	}
+	
+	Integer marks;
+	@Override
+	public int compareTo(Student o) {
+		System.out.println("Compareto called");
+		return this.marks.compareTo(o.marks);//-negative +postive 0
+	}
+	@Override
+	public String toString() {
+		return "Student [marks=" + marks + "]";
+	}
+	
+	
+}
+7:42
+package Kamal;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.TreeSet;
+public class Ex1 {
+  public static void main(String[] args) {
+	  Student s1 = new Student(100);
+	  Student s2 = new Student(80);
+	  TreeSet<Student> list = new TreeSet<Student>();
+	  list.add(s1);
+	  list.add(s2);
+	
+	  System.out.println(list);
+	
+	 
+	 
+	
+}
+}
+class Student implements Comparable<Student>{
+	
+	public Student(Integer marks) {
+		this.marks=marks;
+	}
+	
+	Integer marks;
+	@Override
+	public int compareTo(Student o) {
+		System.out.println("Compareto called");
+		return this.marks.compareTo(o.marks);//-negative +postive 0
+	}
+	@Override
+	public String toString() {
+		return "Student [marks=" + marks + "]";
+	}
+	
+	
+}
+7:42
+package Kamal;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.TreeSet;
+public class Ex1 {
+  public static void main(String[] args) {
+	  Student s1 = new Student(100);
+	  Student s2 = new Student(80);
+	  TreeSet<Student> list = new TreeSet<Student>();
+	  list.add(s1);
+	  list.add(s2);
+	
+	  System.out.println(list);
+	
+	 
+	 
+	
+}
+}
+class Student implements Comparable<Student>{
+	
+	public Student(Integer marks) {
+		this.marks=marks;
+	}
+	
+	Integer marks;
+	@Override
+	public int compareTo(Student o) {
+		return this.marks.compareTo(o.marks);//-negative +postive 0
+	}
+	@Override
+	public String toString() {
+		return "Student [marks=" + marks + "]";
+	}
+	
+	
+}
+7:44
+package Kamal;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+public class Ex1 {
+  public static void main(String[] args) {
+	  Student s1 = new Student(100);
+	  Student s2 = new Student(80);
+	  List<Student> list = new LinkedList<Student>();
+	  list.add(s1);
+	  list.add(s2);
+	  Collections.sort(list);
+	  System.out.println(list);
+	
+	 
+	 
+	
+}
+}
+class Student implements Comparable<Student>{
+	
+	public Student(Integer marks) {
+		this.marks=marks;
+	}
+	
+	Integer marks;
+	@Override
+	public int compareTo(Student o) {
+		return this.marks.compareTo(o.marks);//-negative +postive 0
+	}
+	@Override
+	public String toString() {
+		return "Student [marks=" + marks + "]";
+	}
+	
+	
+}
+7:44
+package Kamal;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+public class Ex1 {
+  public static void main(String[] args) {
+	  Student s1 = new Student(100);
+	  Student s2 = new Student(80);
+	  List<Student> list = new LinkedList<Student>();
+	  list.add(s1);
+	  list.add(s2);
+	  System.out.println(list);
+	
+	 
+	 
+	
+}
+}
+class Student implements Comparable<Student>{
+	
+	public Student(Integer marks) {
+		this.marks=marks;
+	}
+	
+	Integer marks;
+	@Override
+	public int compareTo(Student o) {
+		return this.marks.compareTo(o.marks);//-negative +postive 0
+	}
+	@Override
+	public String toString() {
+		return "Student [marks=" + marks + "]";
+	}
+	
+	
+}
+7:45
+package Kamal;
+import java.util.Arrays;
+import java.util.List;
+public class Ex1 {
+  public static void main(String[] args) {
+	  Student s1 = new Student(100);
+	  Student s2 = new Student(80);
+	  List<Student> list = Arrays.asList(s1,s2);
+	 
+	  System.out.println(list);
+	
+	 
+	 
+	
+}
+}
+class Student implements Comparable<Student>{
+	
+	public Student(Integer marks) {
+		this.marks=marks;
+	}
+	
+	Integer marks;
+	@Override
+	public int compareTo(Student o) {
+		return this.marks.compareTo(o.marks);//-negative +postive 0
+	}
+	@Override
+	public String toString() {
+		return "Student [marks=" + marks + "]";
+	}
+	
+	
+}
+7:47
+package Kamal;
+import java.util.Arrays;
+import java.util.List;
+public class Ex1 {
+  public static void main(String[] args) {
+	  Student s1 = new Student(100);
+	  Student s2 = new Student(80);
+	  List<Student> list = Arrays.asList(s2,s1);
+	 
+	  System.out.println(list);
+	
+	 
+	 
+	
+}
+}
+class Student implements Comparable<Student>{
+	
+	public Student(Integer marks) {
+		this.marks=marks;
+	}
+	
+	Integer marks;
+	@Override
+	public int compareTo(Student o) {
+		return this.marks.compareTo(o.marks);//-negative +postive 0
+	}
+	@Override
+	public String toString() {
+		return "Student [marks=" + marks + "]";
+	}
+	
+	
+}
+7:50
+package Kamal;
+import java.util.Arrays;
+import java.util.List;
+public class Ex1 {
+  public static void main(String[] args) {
+	  Student s1 = new Student(100);
+	  Student s2 = new Student(80);
+	  List<Student> list = Arrays.asList(s2,s1);
+	 
+	  System.out.println(list);
+	
+	 
+	 
+	
+}
+}
+class Student implements Comparable<Student>{
+	
+	public Student(Integer marks) {
+		this.marks=marks;
+	}
+	
+	Integer marks;
+	@Override
+	public int compareTo(Student o) {
+		return this.marks.compareTo(o.marks);//-negative +postive 0
+	}
+	@Override
+	public String toString() {
+		return "Student [marks=" + marks + "]";
+	}
+	
+	
+}
+
+
+Mr.Narendhiran k
+  6:31 PM
+package revisionproj;
+public class Demo8 {
+	public static void main(String[] args) {
+		School dav=new School();
+		dav.runSchool();
+	}
+}
+interface Canteen{
+	public void serve();
+}
+class School{
+	
+	class MyCanteen2 implements Canteen{
+		@Override
+		public void serve() {
+			System.out.println("inner class implementation...");
+		}
+	}
+	public void runSchool() {
+		//external
+		Canteen ccc=new MyCanteen1();
+		ccc.serve();
+		
+		//inner class
+		Canteen can=new MyCanteen2();
+		can.serve();
+		
+		//anonymous
+		new Canteen() {
+			
+			@Override
+			public void serve() {
+				System.out.println("anonymous implementation...");
+			}
+		}.serve();
+		
+		//Lambdas
+		Canteen c=()->{System.out.println("lambda implementation...");};
+		c.serve();
+		
+		//Method Referencing
+		Canteen cc=School::met;
+		cc.serve();
+		
+	}
+	public static void met() {
+		System.out.println("methor ref implementation");
+	}
+}
+//1
+class MyCanteen1 implements Canteen{
+	@Override
+	public void serve() {
+		System.out.println("External implementation...");
+	}
+}
+
+
+malar velkumar
+  10:32 AM
+echo "---- EVEN OR ODD IN SHELL SCRIPT -----";
+echo -n "Enter a number:";
+read n;
+echo -n "RESULT: ";
+if [ `expr $n % 2` == 0 ]
+then
+	echo "$n is even";
+else
+	echo "$n is Odd";
+fi
+
+
+Mr.Narendhiran k
+  12:27 PM
+{
+    "Login":"உள்நுழைய",
+    "Register":"பதிவு",
+    "Username":"பயனர் பெயர்",
+    "Password":"கடவுச்சொல்",
+    "EmailId":"மின்னஞ்சல் முகவரி",
+    "MobileNo":"அலைபேசி எண்",
+    "Enter Id":"ஐடியை உள்ளிடவும்"
+}
+12:27
+select e.ename, d.dname from emp as e, dept as d where e.deptno=d.deptno;
